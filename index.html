@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="description">
+    <meta name="keywords" content="keywords">
+    <meta name="author" content="Muztrends">
+    <title>Muztrends</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/logo/logo-dark-2.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/logo/logo-dark-2.png">
+    <!-- app theme -->
+    <script src="themes/app/js/iconify.min.js"></script>
+    <link rel="stylesheet" href="themes/app/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="themes/app/css/style.css" />
+    <!-- app theme end -->
+</head>
+
+<body>
+<!-- navbar  -->
+<nav id="HNAZMUL_Navbar_NWLSBM">
+    <div class="HNAZMUL_Navbar_NWLSBM-container">
+        <div class="HNAZMUL_Navbar_NWLSBM-brand">
+            <a href="#">
+                <img style="height: 34px" class="img-fluid d-sm-none" src="images/logo/logo-mobile.png" alt="Muztrends" />
+                <img style="width: 220px;" class="img-fluid d-none d-sm-block" src="images/logo/logo-light.png" alt="Muztrends" />
+            </a>
+        </div>
+
+        <div class="HNAZMUL_Navbar_NWLSBM-content">
+            <ul class="navbar-items-wrapper">
+                <li class="nav-item">
+                    <a href="#" class="nav-link d-none d-md-block">REGISTER</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link d-none d-md-block">LOGIN</a>
+                </li>
+                <li class="nav-item" style="cursor: pointer;">
+                    <div href="javascript:void(0);" class="nav-link toggler-icon cursor-pointer"><img src="themes/app/images/toggler-icon.svg" alt="Muztrends" /></div>
+                </li>
+               
+            </ul>
+        </div>
+
+        <div class="HNAZMUL_Navbar_NWLSBM-sitebar-content">
+            <ul class="toggle-content-wrapper">
+
+                <li class="nav-item"><a href="#" class="nav-links text-center">
+                    <span class="text-black">Agency Member</span>
+                        <span class="text-danger">- Upgrade Now</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-links">
+                        <i class="fas fa-home mr-1"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-links bg-secondary text-white" title="List of highest trending products on Google in last 24 hours i.e. products who get the highest rise in numbers of searches on Google in the last 24 hours">
+                        <i class="fas fa-chart-line mr-1"></i> Daily Trends
+                    </a>
+                </li>
+                <li class="nav-item"><a href="" class="nav-links">
+                        <i class="fas fa-network-wired mr-1"></i> Affiliate</a>
+                </li>
+                <li class="nav-item"><a href="" class="nav-links">
+                        <i class="fas fa-question-circle mr-1"></i> FAQs</a>
+                </li>
+                <li class="nav-item"><a href="" class="nav-links">
+                        <i class="fas fa-chalkboard-teacher mr-1"></i> Training</a>
+                </li>
+                <li class="nav-item"><a href="" class="nav-links">
+                        <i class="fas fa-address-book mr-1"></i> Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-links"><i class="fas fa-heart"></i> Saved</a>
+                </li>
+                <li class="nav-item"><a href="" class="nav-links"><i class="fa fa-user"></i> Profile</a>
+                </li>
+                <li class="nav-item"><a href="" class="nav-links"><i class="fa fa-lock"></i> Change Password</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-links"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+<!-- title with countdown -->
+
+<div class='title-section'>
+        <div><img class="img-fluid d-block" style="height:126px" src="images/logo/logo-mobile.png" alt="Muztrends" /></div>
+        <div class='trending-products'>
+        <h1>TRENDING PRODUCTS</h1>
+        <span>
+            <h5>Highest Trending Products according to Google Trends Captured on 11th Nov 2021 from out Database of 700+ Products</h5>
+        </span>
+        <span style="display: flex;flex-direction: row;">
+            <h1>NEXT UPDATE IN:</h1>
+           <p id="dynamic-counter"></p>
+        </span>
+        </div>
+
+</div>
+
+<!-- title section end -->
+
+</nav>
+<!-- navbar end -->
+
+<div class="floating-menu">
+
+<div class="HNAZMUL_Navbar_NWLSBM-under-bar">
+    <ul class="nav justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item under-tab-link" role="presentation">
+            
+            <a href="#" id="trending" class="sec-menu text-dark font-13-320" type="button" role="tab" aria-controls="profile" aria-selected="false" onclick="secondaryTrendDesign()">
+               
+                <h2  class="float-headings">Trending</h2>
+            </a>
+            <i class="fa fa-info-circle"></i>
+
+        </li>
+        <li class="nav-item under-tab-link" role="presentation">
+            <a href="#" id="latest"  class="sec-menu text-dark font-13-320" role="tab" aria-controls="contact" aria-selected="false" onclick="secondaryLatestDesign()">
+                <h2 class="float-headings">LATEST</h2>
+            </a>
+            <i class="fa fa-info-circle"></i>
+
+        </li>
+        <li class="floatingBar-mobile">
+            <button type="button" class="collapsible" onclick="Collapse()" style="font-size: xx-large; font-weight: bolder;">+</button>
+        </li>
+        <li id="Prodkeywords" class="Collapsecontent under-tab-link" role="presentation">
+            <a href="#" id="keywords"  class="sec-menu text-dark font-13-320" role="tab" aria-controls="contact" aria-selected="false" onclick="secondaryKeywordsDesign()">
+                <h2 class="float-headings">PRODUCT KEYWORDS</h2>
+            </a>
+            <i class="fa fa-info-circle"></i>
+
+        </li>
+       </ul>
+    </div>
+
+    
+</div>
+
+<div style="background-color: white;">
+    <div class="filterBar">
+        <div id="container">
+            <nav class="navBar">
+                
+                <ul>
+                        <li><a href="#">UnitedStates</a>
+                        <ul>
+                            <li><a href="#">Themes</a></li>
+                            <li><a href="#">Plugins</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                        </ul>        
+                        </li>
+
+                        <li><a href="#">All Categories</a>
+                            <ul>
+                                <li><a href="#">Themes</a></li>
+                                <li><a href="#">Plugins</a></li>
+                                <li><a href="#">Tutorials</a></li>
+                            </ul>        
+                        </li>
+                            
+                        <li><a href="#">High Rating</a>
+                                <ul>
+                                    <li><a href="#">Themes</a></li>
+                                    <li><a href="#">Plugins</a></li>
+                                    <li><a href="#">Tutorials</a></li>
+                                </ul>        
+                        </li>
+                </ul>   
+            </nav>
+        </div>
+
+
+        <div class='search-bar'>
+            <input class="search-bar__input" type="text" id="search-input" autocomplete="off" placeholder="Enter your search..." />
+                <label class="search-bar__trigger" for="search-input"><svg class="search-bar__trigger-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
+            <path d="M505.749 475.587l-145.6-145.6c28.203-34.837 45.184-79.104 45.184-127.317C405.333 90.926 314.41.003 202.666.003S0 90.925 0 202.669s90.923 202.667 202.667 202.667c48.213 0 92.48-16.981 127.317-45.184l145.6 145.6c4.16 4.16 9.621 6.251 15.083 6.251s10.923-2.091 15.083-6.251c8.341-8.341 8.341-21.824-.001-30.165zM202.667 362.669c-88.235 0-160-71.765-160-160s71.765-160 160-160 160 71.765 160 160-71.766 160-160 160z" /></svg>Search</label>
+        </div>
+    </div>
+
+    </div>
+
+    <div style="background-color: white;">
+        <h1 class="heading" onclick="filterBarCollapse()">Filters <span style="font-size: xx-large; font-weight: bolder; padding-left: 8px;">+</span></h1>
+        <div id="container-mobile">
+            <div class="filterBar-mobile">
+                <div id="Bar-container">
+                    <nav class="navBar">
+                        
+                        <ul style="display: flex; flex-direction: row;">
+                                <li><a href="#">UnitedStates</a>
+                                <ul style="z-index: 500;">
+                                    <li><a href="#">Themes</a></li>
+                                    <li><a href="#">Plugins</a></li>
+                                    <li><a href="#">Tutorials</a></li>
+                                </ul>        
+                                </li>
+        
+                                <li><a href="#">All Categories</a>
+                                    <ul style="z-index: 500;">
+                                        <li><a href="#">Themes</a></li>
+                                        <li><a href="#">Plugins</a></li>
+                                        <li><a href="#">Tutorials</a></li>
+                                    </ul>        
+                                </li>
+                        </ul>
+                        <ul style="text-align: center;">
+                                    
+                                <li><a href="#">High Rating</a>
+                                        <ul style="z-index: 500;">
+                                            <li><a href="#">Themes</a></li>
+                                            <li><a href="#">Plugins</a></li>
+                                            <li><a href="#">Tutorials</a></li>
+                                        </ul>        
+                                </li>
+                        </ul>   
+                    </nav>
+                </div>
+        
+                <div class='search-bar'>
+                    <input class="search-bar__input" type="text" id="search-input2" autocomplete="off" placeholder="Enter your search..." />
+                        <label  class="search-bar__trigger" for="search-input2"><svg class="search-bar__trigger-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
+                    <path d="M505.749 475.587l-145.6-145.6c28.203-34.837 45.184-79.104 45.184-127.317C405.333 90.926 314.41.003 202.666.003S0 90.925 0 202.669s90.923 202.667 202.667 202.667c48.213 0 92.48-16.981 127.317-45.184l145.6 145.6c4.16 4.16 9.621 6.251 15.083 6.251s10.923-2.091 15.083-6.251c8.341-8.341 8.341-21.824-.001-30.165zM202.667 362.669c-88.235 0-160-71.765-160-160s71.765-160 160-160 160 71.765 160 160-71.766 160-160 160z" /></svg>Search</label>
+                </div>
+            </div>
+        
+            </div>
+        
+        
+        
+        </div>
+
+
+<!-- mobile-filter -->
+
+
+</div>
+
+<!-- app theme -->
+<!-- <script src="themes/app/js/bootstrap.bundle.js"></script> -->
+<script src="themes/app/js/index.js"></script>
+</body>
+</html>
